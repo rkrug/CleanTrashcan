@@ -129,7 +129,7 @@ convert_cxd_to_avi <- function (
     " -vcodec png",
     " -vtag 'PNG '",
     " -compression_level ", compression_level,
-    " ", avi_tmp
+    " '", avi_tmp, "'"
   )
   system2(
     command = ffmpeg,
